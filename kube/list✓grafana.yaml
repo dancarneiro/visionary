@@ -1,0 +1,72 @@
+>DataPower ✓
+172.28.113.130  
+172.28.113.131
+172.28.113.132
+
+>Graylog ✓
+prd: ap1  #✓
+prd: ap2  #✓
+prd: ap3  #✓
+prd: ap4  #✓
+prd: web1  #✓
+prd: web2  #✓
+    
+>Siem
+colector: 1     #✓
+colector: 2     #✓
+colector: 3     #✓
+nfs:            #✓
+supervisor:     #✓
+worker: 1       #✓
+worker: 2       #✓
+worker: 3       #✓
+
+
+>Contexto     >Rede             >Host
+
+Data-Center:	10.206.50.0/27	  Cyclops:           10.206.50.9 
+            	10.206.50.0/27	  Cyclops:           10.206.50.10
+            	10.206.50.0/27	  Cyclops:           10.206.50.11
+            	10.206.50.0/27	  Cyclops:           10.206.50.12
+>Distino
+Data-Center:  10.206.50.32/27   SIEM Collector 01: 10.206.50.51
+              10.206.50.32/27   SIEM Collector 02: 10.206.50.52
+              10.206.50.32/27   SIEM Collector 03: 10.206.50.53
+                                SIEM Worker 01: 10.206.50.56
+                                SIEM Worker 01: 10.206.50.57
+                                SIEM Worker 01: 10.206.50.58
+
+
+                               
+ssh root@10.206.50.51 'iptables -A INPUT -s 10.206.50.9 -p tcp -m tcp --port 10050 -j ACCEPT
+
+iptables -A INPUT -s 10.206.50.10 -p tcp -m tcp --port 10050 -j ACCEPT
+
+iptables -A INPUT -s 10.206.50.11 -p tcp -m tcp --port 10050 -j ACCEPT
+
+iptables -A INPUT -s 10.206.50.12 -p tcp -m tcp --port 10050 -j ACCEPT
+
+exit
+
+'
+'
+
+
+service.info[AoWinAgt]
+
+0 ⇒ Running
+1 ⇒ Paused
+2 ⇒ Start pending
+3 ⇒ Pause pending
+4 ⇒ Continue pending
+5 ⇒ Stop pending
+6 ⇒ Stopped
+7 ⇒ Unknown
+255 ⇒ No such service
+
+''
+
+>NFS
+
+
+

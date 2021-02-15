@@ -1,0 +1,53 @@
+Hostname = TDT-DEV-APP1
+SO = Windows Server 2019 Std
+CPU = 2
+RAM = 4GB
+Disk SO = 50GB
+VLAN 3601 10.204.1.213
+ S210212_000001
+
+Hostname = TDT-DEV-DB1
+SO = Windows Server 2019 Std
+CPU = 2
+RAM = 4GB
+Disk SO = 50GB
+Disk DB = 50GB
+ VLAN 3602 10.204.2.213
+  S210212_000001
+
+Hostname = GTAMI-DEV-APP1
+SO = Windows Server 2019 Std
+CPU = 2
+RAM = 4GB
+Disk SO = 50GB
+VLAN 3601 10.204.1.214
+ S210212_000001
+
+Hostname = GTAMI-DEV-DB1
+SO = Windows Server 2019 Std
+CPU = 2
+RAM = 4GB
+Disk SO = 50GB
+Disk DB = 50GB
+ VLAN 3602 10.204.2.214
+  S210212_000001
+
+Hostname = CIM-DEV-APP1
+SO = Windows Server 2019 Std
+CPU = 2
+RAM = 4GB
+Disk SO = 50GB
+VLAN 3601 10.204.1.215
+ S210212_000001
+
+Hostname = CIM-DEV-DB1
+SO = Windows Server 2019 Std
+CPU = 2
+RAM = 4GB
+Disk SO = 50GB
+Disk DB = 50GB
+ VLAN 3602 10.204.2.215
+  S210212_000001
+
+
+

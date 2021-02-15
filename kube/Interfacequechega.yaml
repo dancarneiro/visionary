@@ -1,0 +1,41 @@
+Interface que chega
+
+to 5 de outrubro
+to av republica
+to HSM ASR 
+to ccm
+to RB 
+
+
+show interface discription 
+link L2 Porto
+
+Interface Bridge-Aggregation24(BAG24_Layer2_CCM): Operational status
+Interface Bridge-Aggregation20(BAG20_Layer2_5Outubro): Operational status
+Interface Bridge-Aggregation21(BAG21_Layer2_Rep61): Operational status
+Interface Po15(****L2 Altice HSM****): Operational status
+Interface Ten-GigabitEthernet1/2/12(GW Voz PTRB121_VG02): Operational status
+
+Interface Bridge-Aggregation24(BAG24_Layer2_CCM): 
+Interface Bridge-Aggregation20(BAG20_Layer2_5Outubro): 
+Interface Bridge-Aggregation21(BAG21_Layer2_Rep61): 
+Interface Po15(****L2 Altice HSM****): 
+Interface Ten-GigabitEthernet1/2/12(GW Voz PTRB121_VG02): 
+
+
+
+
+RBN: 410903.7 83711.2
+REP: 410738.5 83620.0
+5OU: 410945.4 83759.0
+HSM: 410935.5 83635.7
+
+
+
+INFLUX BD: 10.206.50.26
+[
+{"target": "RBN","datapoints": [[41.09037, 83711.2,]]}
+{"target": "REP","datapoints": [[410738.5, 83620.0,]]}
+{"target": "5OU","datapoints": [[410945.4, 83759.0,]]}
+{"target": "HSM","datapoints": [[410935.5, 83635.7,]]}
+]
