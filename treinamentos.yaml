@@ -1,0 +1,74 @@
+Terraform:
+
+Entendendo os conceitos sobre Infra-as-Code
+Introdução ao Terraform
+Utilizando o Terraform CLI
+Terraform Apply
+Terraform Console
+Terraform Output
+Variáveis
+Terraform Taint
+Atualizando recursos
+Terraform Modules
+Construindo nosso primeiro módulo
+Terraform workflow
+Entendendo e gerenciando o terraform state
+Entendendo e gerenciando configurações
+
+Ansible:
+
+Introdução
+Yaml, o que são, do que se alimentam?
+Entendendo a arquitetura do Ansible
+Instalando e configurando o Ansible
+Utilizando o Ansible para comandos Ad-Hoc
+Entendendo e criando nossos primeiros Playbooks
+Variaveis e facts
+Inventário
+Módulos
+Entendendo e controlando nossas tasks
+Roles
+Jinga2 e templates
+Deploying nossa primeira app usando Ansible
+Ansible Vault
+Playbook deep dive
+AWX
+Troubleshoot
+Utilizando Ansible na AWS ou Azure
+Utilizando Ansible e Docker
+Utilizando Ansible e Kubernetes
+
+Packer: 
+
+Entendendo conceitos de infraestrutura imutável
+Introdução
+Instalando packer
+Comandos
+Anatomia de um template packer
+Communicators
+Builders
+Parallel
+Provisioners
+Post-Processors
+Utilizando packer em um pipeline
+Testando com packer
+Troubleshooting
+
+Vault:
+
+A arquitetura do Vault
+Métodos de autenticação
+Vault CLI
+Vault policies
+Vault tokens
+Vault leases
+Vault secrets engines
+Vault UI
+Tipos de storages
+Conhecendo a Vault API
+Conhecendo o ha_storage
+Integrando o Consul como ha_storage
+Criando um cluster com alta disponibilidade
+auto-unseal
+Entendendo encryption as a service
+Transit
