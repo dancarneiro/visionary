@@ -38,7 +38,6 @@ kubeadm config images pull
 
 kubeadm init 
 
-
 Your Kubernetes control-plane has initialized successfully!
 
 To start using your cluster, you need to run the following as a regular user:
@@ -51,22 +50,17 @@ Alternatively, if you are the root user, you can run:
 
   export KUBECONFIG=/etc/kubernetes/admin.conf
 
-Alternatively, if you are the root user, you can run:
-
-  export KUBECONFIG=/etc/kubernetes/admin.conf
-  
 You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
 
+----------------------------------------------------------------------------------------------------------------
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ############################################################################################################
-
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join 192.168.1.160:6443 --token bndmqk.00y7j4g10jgsbill \
-    --discovery-token-ca-cert-hash sha256:10d3b29cc8d3cb264739439a71df23765112ef104491a19a9baa57d2fdd8fafa
-
+kubeadm join 192.168.1.50:6443 --token n3mjx7.87mb1ukj4yvsz6r4 \
+    --discovery-token-ca-cert-hash sha256:321c6fe3149c1d6dd08fba98af253bbbfa6d64b8a1f46fe8c1189d3dc3fdb286 
 ##########################################################################################################
 
 Erro de certificado:
