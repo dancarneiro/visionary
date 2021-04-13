@@ -1,0 +1,57 @@
+    1  hostname elliot-01
+    2  echo elliot-01 > /etc/hostname
+    3  bash
+    4  curl -fsSL https://get.docker.com | bash
+    5  docker version
+    6  docker psku
+    7  echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
+    8  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+    9  apt-get update
+   10  apt-get install kubelet kubectl kubeadm
+   11  kubectl version
+   12  kubeadm config images pull
+   13  kubeadm init
+   14  kubectl get nodes
+   15  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   16  kubectl get nodes
+   17  kubectl get pods
+   18  kubectl get pods --all-namespaces
+   19  kubectl get nodes
+   20  kubectl get pods --all-namespaces
+   21  kubectl get nodes
+   22  source <(kubectl completion bash)
+   23  ls
+   24  curl -L https://istio.io/downloadIstio | sh -
+   25  istioctl
+   26  export PATH="$PATH:/root/istio-1.5.0/bin"
+   27  ls
+   28  ls istio-1.5.0/bin/istioctl
+   29  istioctl
+   30  history
+   31  ls
+   32  c istio-1.5.0/
+   33  cd istio-1.5.0/
+   34  ls
+   35  istioctl manifest apply --set profile=demo
+   36  
+   37  kubectl get namespaces
+   38  kubectl get namespaces default -o yaml
+   39  ls
+   40  cd samples/
+   41  ls
+   42  cd ..
+   43  ls
+   44  kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+   45  vim samples/bookinfo/platform/kube/bookinfo.yaml
+   46  kubectl get pods -n istio-system
+   47  history
+         kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+         # kubectl describe gateway bookinfo-gateway
+         kubectl port-forward svc/kiali 20001:20001 -n istio-system --address 0.0.0.0
+
+--
+
+
+Ou no gist:
+https://gist.github.com/luisangelorjr/47ab7f185e1465e67a413b02163aa382
+
