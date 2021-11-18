@@ -1,3 +1,5 @@
+swapoff -a
+
 istioctl dashboard -----
 
 Docker:
